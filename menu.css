@@ -1,388 +1,288 @@
-* {
-  font-family: 'Poppins', sans-serif;
+*{
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
-.navbar-light .navbar-nav .nav-link{
-  color: #ed4b10;
-  font-size: 22px;
-  top: 50px;
+h1{
+  text-align: center;
+  color: black;
+  padding: 30px;
+  font: 1em sans-serif;
+  font-size:100px;
+  letter-spacing: 8px
+}
+nav{
+  background-color: rgb(224, 81, 5);
+  display: grid;
+  place-items: center;
+}
+nav ul{
   list-style: none;
+}
+nav ul a{
   display: inline-block;
-  margin-left: 20px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-  top: 0;
-  z-index: 999;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in;
+  font-size: 18px;
+}
+nav ul a:hover{
+  background-color: white;
+  color:black;
+}
+.items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 20px;
+  grid-column-gap:20px ;
+  grid-row-gap:30px;
+}
+.item img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.item img:hover{
+  transform: scale(1.04);
+}
+.item h4{
+  padding: 5px;
+  text-align: center;
+}
+.item button{
+  padding: 5px 30px;
+  border:none;
+  outline: none;
+  background-color:rgb(224, 81, 5);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+  display: block;
+  margin: auto;
+  transition: 0.2s all;
+}
+.item button:hover{
+  transform: scale(1.08);
+}
+.button{
+  padding: 5px 30px;
+  border:none;
+  outline: none;
+  background-color:rgb(224, 81, 5);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+  display: block;
+  margin: auto;
+  transition: 0.2s all;
+}
 
+  .button:hover{
+    transform: scale(1.08);
 }
-@media only screen and (max-width:600px){
-  header{
-      background-position: 20% 33%;
-  }
-}
-.navbar-brand .logo{
-  position: absolute;
-  top: 15px;
-  max-width: 80px;
-  height: auto;
-}
-.nav-menu a:hover::before,
-.nav-menu li:hover > a::before,
-.nav-menu .active > a::before {
-    visibility: visible;
-    width: 100%;
-}
-.nav-menu a:hover,
-.nav-menu .active > a,
-.nav-menu li:hover > a {
-    color:#e85c16;
-}
-@media screen  (max-width:768px) {
-    margin: 0 48px 0 0;
-    padding: 6px 18px;
-}
-//Mobile Navigation Menu//
-.mobile-nav-toggle {
-    position: fixed;
-    top: 18px;
-    right: 15px;
-    z-index: 9998;
-    border: 0;
-    background: none;
-    font-size: 24px;
-    transition: all 0.4s;
-    outline: none !important;
-    line-height: 1;
-    cursor: pointer;
-    text-align: right;
-}
-.mobile-nav-toggle i {
-    color: #e85c16;
-}
-.mobile-nav {
-    position: fixed;
-    top: 55px;
-    right: 15px;
-    left: 15px;
-    bottom: 15px;
-    z-index: 9999;
-    overflow-y: auto;
-    background: #f5e3eb;
-    transition: ease-in-out 0.2s;
-    opacity: 0;
-    visibility: hidden;
-    border-radius: 10px;
-    padding: 10px 0;
-}
-.mobile-nav-overlay {
-    width: 100%;
-    height: 100%;
-    z-index: 9997;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: rgba(17,17,17,0.6);
-    overflow: :hidden;
-    display: none;
-    transition: ease-in-out 0.2s;
-}
-.mobile-nav-active {
-    overflow:hidden;
-}
-.mobile-nav-active .mobile-nav {
-    opacity: 1;
-    visibility: visible;
-}
-.mobile-nav * {
-    margin:0;
-    padding: 0;
-    list-style: none;
-}
-.mobile-nav a{
-    display: block;
-    position: relative;
-    color: #2a2a2a;
-    padding:10px 20px;
-    font-weight: 500;
-    outline: none;
-    font-size: 15px;
-}
-.mobile-nav a:hover,
-.mobile-nav .active > a,
-.mobile-nav li:hover > a {
-    color: #e85c16,
-    text-decoration: none;
-}
-.mobile-nav a:hover {
-    background: #000000;
-    border: 2px solid #000000;
-}
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-  }
-  
-  .card {
-    width: 300px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .card-content {
-    padding: 20px;
-  }
-  
-  .card-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .card-content p {
-    font-size: 16px;
-    color: #666;
-  }
-  .text h1 {
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .button-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .button {
-    background-color: #f88221; 
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 30px; 
-    cursor: pointer;
-    border-radius: 60px;
-    list-style: none;
-  }
-  .button:hover {
-    background-color:#C64E81;
-  }
- 
-  
-  .logo {
-    position: absolute;
-    top: 10px;
-    left: 40px;
-  }
-  
-  .logo img {
-    max-width: 120px;
-    height: auto;
-  }
 
-  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
-  * {
-    font-family: Open Sans;
+
+
+@media screen and (max-width: 1000px){
+  .items{
+    grid-template-columns: repeat(2, 1fr);
+
   }
-  
-  section {
-    width: 100%;
-    display: inline-block;
+}
+@media screen and (max-width: 768px){
+  .items{
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+.footer-distributed{
     background: #fff;
-    height: 50vh;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 700;
-    text-decoration: underline;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+#footer-logo {
+    height: 200px;
+    width: auto; 
   }
-  
-  .footer-distributed{
-    background: #fff;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    font: bold 16px sans-serif;
-    padding: 55px 50px;
-  }
-  
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: inline-block;
-    vertical-align: top;
-  }
-  
-  /* Footer left */
-  
-  .footer-distributed .footer-left{
-    width: 40%;
-  }
-  
-  /* The company logo */
-  
-  #footer-logo {
-      height: 250px;
-      width: auto; 
-    }
-  
-  .footer-distributed h3 span{
-    color:  lightseagreen;
-  }
-  
-  /* Footer links */
-  
-  .footer-distributed .footer-links{
-    color:  #110101;
-    margin: 20px 0 12px;
-    padding: 0;
-  }
-  
-  .footer-distributed .footer-links a{
-    display:inline-block;
-    line-height: 1.8;
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #110101;
+	margin: 20px 0 12px
+	padding: 20px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
     font-weight:400;
-    text-decoration: none;
-    color:  inherit;
-  }
-  
-  .footer-distributed .footer-company-name{
-    color:  #222;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0;
-  }
-  
-  /* Footer Center */
-  
-  .footer-distributed .footer-center{
-    width: 35%;
-  }
-  
-  .footer-distributed .footer-center i{
-    background-color:  #33383b;
-    color: #f6f0f0;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
-    vertical-align: middle;
-  }
-  
-  .footer-distributed .footer-center i.fa-envelope{
-    font-size: 17px;
-    line-height: 38px;
-  }
-  
-  .footer-distributed .footer-center p{
-    display: inline-block;
-    color: #120505;
-    font-weight:400;
-    vertical-align: middle;
-    margin:0;
-  }
-  
-  .footer-distributed .footer-center p span{
-    display:block;
-    font-weight: normal;
-    font-size:14px;
-    line-height:2;
-  }
-  
-  .footer-distributed .footer-center p a{
-    color:  lightseagreen;
-    text-decoration: none;;
-  }
-  
-  .footer-distributed .footer-links a:before {
-    content: "|";
-    font-weight:300;
-    font-size: 20px;
-    left: 0;
-    color: #958d8d;
-    display: inline-block;
-    padding-right: 5px;
-  }
-  
-  .footer-distributed .footer-links .link-1:before {
-    content: none;
-  }
-  
-  /* Footer Right */
-  
-  .footer-distributed .footer-right{
-    width: 20%;
-  }
-  
-  .footer-distributed .footer-company-about{
-    line-height: 20px;
-    color:  #92999f;
-    font-size: 13px;
-    font-weight: normal;
-    margin: 0;
-  }
-  
-  .footer-distributed .footer-company-about span{
-    display: block;
-    color:  #ffffff;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .footer-distributed .footer-icons{
-    margin-top: 25px;
-  }
-  
-  .footer-distributed .footer-icons a{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color:  #33383b;
-    border-radius: 2px;
-  
-    font-size: 20px;
-    color: #eddede;
-    text-align: center;
-    line-height: 35px;
-  
-    margin-right: 3px;
-    margin-bottom: 5px;
-  }
-  
-  /* If you don't want the footer to be responsive, remove these media queries */
-  
-  @media (max-width: 880px) {
-  
-    .footer-distributed{
-      font: bold 14px sans-serif;
-    }
-  
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right{
-      display: block;
-      width: 100%;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-  
-    .footer-distributed .footer-center i{
-      margin-left: 0;
-    }
-  
-  }
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #f6f0f0;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #120505;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #958d8d;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #eddede;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
