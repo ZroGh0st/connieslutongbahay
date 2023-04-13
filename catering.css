@@ -90,7 +90,7 @@ body {
         max-width: 1024px;
         padding: 0;
     }
-
+    
     .navbar__menu {
         display: flex;
         justify-content: space-between;
