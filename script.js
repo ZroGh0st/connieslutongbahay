@@ -156,6 +156,15 @@ $('.clear-cart').click(function() {
 function displayCart() {
   var cartArray = shoppingCart.listCart();
   var output = "";
+  output += "<form>"
+  + "<label for='name'>Name:</label>"
+  + "<input type='text' id='name' name='name'><br><br>"
+  + "<label for='email'>Email:</label>"
+  + "<input type='email' id='email' name='email'><br><br>"
+  + "<label for='phone'>Phone Number:</label>"
+  + "<input type='tel' id='phone' name='phone'><br><br>"
+  + "</form>"
+  
   for(var i in cartArray) {
     output += "<tr>"
       + "<td>" + cartArray[i].name + " </td>" 
