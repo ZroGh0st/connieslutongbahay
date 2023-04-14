@@ -11,6 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <title>CONTACT US</title>
+
+    <style>
+        /* Set the height of the map container */
+        #map-container {
+          height: 30vh;
+          width: 30vh;
+        }
+      </style>
 </head>
 
 <body>
@@ -72,7 +80,9 @@
                     </li>
                     <li>
                         Butong, Quezon, Philippines, 8710
+                        <div id="map-container"></div>
                     </li>
+                       
                 </ul>
                 <ul class="third">
                     <h1>FOLLOW US ON</h1>
@@ -81,9 +91,36 @@
                         Facebook
                     </li>
                 </ul>
+                
             </div>
         </div>
     </div>
+     <!-- Include the Google Maps API script -->
+     <script
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEg9F_jnYKlCg9ZqCQTL-5yVe99qAYZ_E&callback=initMap"
+     async
+     defer
+   ></script>
+    <!-- Create a script to initialize the map -->
+    <script>
+        function initMap() {
+          // Set the coordinates for the center of the map
+          var myLatLng = { lat: 7.809555005775461, lng: 125.07443170942659 };
+          
+          // Create a new map object
+          var map = new google.maps.Map(document.getElementById("map-container"), {
+            center: myLatLng,
+            zoom: 18,
+          });
+  
+          // Create a marker for the center of the map
+          var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: "San Francisco, CA",
+          });
+        }
+      </script>
     <script src="index.js"></script>
 </body>
 
