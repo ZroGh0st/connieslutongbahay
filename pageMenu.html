@@ -11,7 +11,11 @@
 
     
     <title>Connie's Lutong Bahay</title>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
   <header>
         <body class="background">
   <!-- Navbar -->
@@ -41,6 +45,10 @@
           <li class="navbar__item">
               <a href="fifth.html" class="navbar__links"> CONTACT US </a>
           </li>
+          <li class="navbar__item">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><a href="#"></a><i class="fa-solid fa-cart-shopping"></i> Cart ( <span class="total-count"></span> )</button>
+              <button class="clear-cart btn btn-danger"> Clear Cart</button></div>
+        </li>
       </ul>
   </div>
 </nav>
@@ -64,28 +72,28 @@
       <h5>Bistek</h5>
       <h6>savory and slightly tangy taste, with tender slices of beef</h6>
       <p>₱150</p>
-      <button>Add order</button>
+      <a href="#" data-name="Bistek" data-price="150" class="add-to-cart btn" style="background-color: rgb(255, 115, 0); color: white;">Add to cart</a>
     </div>
   </div>
 
   <div class="card">
-    <img src="img/Beefstake.png" alt="Image 2">
+    <img src="img/Adobo.png" alt="Image 2">
     <br>
     <div class="card-content">
-      <h5>Beef Brocolli</h5>
+      <h5>Adobo</h5>
       <h6>Tender, 
         Nutritious, 
         Flavorful, 
         Juicy</h6>
       <p>₱150</p>
-      <button>Add order</button>
+      <a href="#" data-name="Bistek" data-price="150" class="add-to-cart btn" style="background-color: rgb(255, 115, 0); color: white;">Add to cart</a>
     </div>
   </div>
 
   <div class="card">
-    <img src="img/Beefstake.png" alt="Image 3">
+    <img src="img/Babyback Ribs.png" alt="Image 3">
     <div class="card-content">
-      <h5>Kebab Turki</h5>
+      <h5>Baby Back Ribs</h5>
       <h6> Spicy, 
         Grilled, 
         Savory, 
@@ -93,14 +101,14 @@
         Smoky,
         Middle-Eastern </h6>
       <p>₱150</p>
-      <button>Add order</button>
+      <a href="#" data-name="Bistek" data-price="150" class="add-to-cart btn" style="background-color: rgb(255, 115, 0); color: white;">Add to cart</a>
     </div>
   </div>
 
     <div class="card">
-      <img src="img/Beefstake.png" alt="Image 1">
+      <img src="img/Beef Caldereta.png" alt="Image 1">
       <div class="card-content">
-        <h5>Big Burger</h5>
+        <h5>Beef Caldereta</h5>
         <h6>Juicy,
           Meaty,
           Hearty, 
@@ -110,15 +118,15 @@
           Grilled,
           Classic</h6>
         <p>₱150</p>
-        <button>Add order</button>
+        <a href="#" data-name="Bistek" data-price="150" class="add-to-cart btn" style="background-color: rgb(255, 115, 0); color: white;">Add to cart</a>
       </div>
     </div>
   
     <div class="card">
-      <img src="img/Beefstake.png" alt="Image 2">
+      <img src="img/Beef Steak.png" alt="Image 2">
       <br>
       <div class="card-content">
-        <h5>Vegetable Pizza</h5>
+        <h5>Beef steak</h5>
         <h6>
           Fresh, 
           Crispy, 
@@ -127,13 +135,13 @@
           Savory,
           Balanced.</h6>
         <p>₱150</p>
-        <button>Add order</button>
+        <a href="#" data-name="Bistek" data-price="150" class="add-to-cart btn" style="background-color: rgb(255, 115, 0); color: white;">Add to cart</a>
       </div>
     </div>
     <div class="card">
-      <img src="img/Beefstake.png" alt="Image 3">
+      <img src="img/Bualo.png" alt="Image 3">
       <div class="card-content">
-        <h5>Kebab Turki</h5>
+        <h5>Bulalo</h5>
         <h6> Spicy, 
           Grilled, 
           Savory, 
@@ -141,52 +149,52 @@
           Smoky,
           Middle-Eastern </h6>
         <p>₱150</p>
-        <button>Add order</button>
+        <a href="#" data-name="Bistek" data-price="150" class="add-to-cart btn" style="background-color: rgb(255, 115, 0); color: white;">Add to cart</a>
       </div>
     </div>
     <div class="card-container">
       <div class="card">
-        <img src="img/Beefstake.png" alt="Image 1">
+        <img src="img/Kare-Kare.png" alt="Image 1">
         <div class="card-content">
-          <h5>Big Hotdog</h5>
+          <h5>Kare-Kare</h5>
           <p>₱150</p>
-          <button>Add order</button>
+          <a href="#" data-name="Bistek" data-price="150" class="add-to-cart btn" style="background-color: rgb(255, 115, 0); color: white;">Add to cart</a>
         </div>
       </div>
     
       <div class="card">
-        <img src="img/Beefstake.png" alt="Image 2">
+        <img src="img/Meatballs.png" alt="Image 2">
         <div class="card-content">
-          <h5>French Fries</h5>
+          <h5>Meatballs</h5>
           <p>₱150</p>
-          <button>Add order</button>
+          <a href="#" data-name="Bistek" data-price="150" class="add-to-cart btn" style="background-color: rgb(255, 115, 0); color: white;">Add to cart</a>
         </div>
       </div>
     
       <div class="card">
-        <img src="img/Beefstake.png" alt="Image 3">
+        <img src="img/Porkchop.png" alt="Image 3">
         <div class="card-content">
-          <h5>Chicken Wings</h5>
+          <h5>Pork Chops</h5>
           <p>₱150</p>
-          <button>Add order</button>
+          <a href="#" data-name="Bistek" data-price="150" class="add-to-cart btn" style="background-color: rgb(255, 115, 0); color: white;">Add to cart</a>
         </div>
       </div>
       <div class="card-container">
         <div class="card">
-          <img src="img/Beefstake.png" alt="Image 1">
+          <img src="img/Pork BBQ.png" alt="Image 1">
           <div class="card-content">
-            <h5>Big Hotdog</h5>
+            <h5>Pork BBQ</h5>
             <p>₱150</p>
-            <button>Add order</button>
+            <a href="#" data-name="Bistek" data-price="150" class="add-to-cart btn" style="background-color: rgb(255, 115, 0); color: white;">Add to cart</a>
           </div>
         </div>
       
         <div class="card">
-          <img src="img/Beefstake.png" alt="Image 2">
+          <img src="img/Sweet _ Sour.png" alt="Image 2">
           <div class="card-content">
-            <h5>French Fries</h5>
+            <h5>Sweet and Sour</h5>
             <p>₱150</p>
-            <button>Add order</button>
+            <a href="#" data-name="Bistek" data-price="150" class="add-to-cart btn" style="background-color: rgb(255, 115, 0); color: white;">Add to cart</a>
           </div>
         </div>
       
@@ -195,7 +203,7 @@
           <div class="card-content">
             <h5>Chicken Wings</h5>
             <p>₱150</p>
-            <button>Add order</button>
+            <a href="#" data-name="Bistek" data-price="150" class="add-to-cart btn" style="background-color: rgb(255, 115, 0); color: white;">Add to cart</a>
           </div>
         </div>
       
@@ -205,6 +213,31 @@
       <br>
       <br>
       <br>
+
+ <!-- Modal -->
+ <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Order now</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
  <!--Footer-->
 
  <footer class="footer-distributed">
@@ -274,6 +307,7 @@
 
 </footer>
 </section>
+<script src="script.js"></script>
 <script src="bar.js"></script>
 </body>
-</html>n
+</html>
