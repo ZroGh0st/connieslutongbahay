@@ -172,7 +172,7 @@ function displayCart() {
       + "<td><div class='input-group'>"
       + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
       + "<td><button class='delete-item btn bg-danger' data-name=" + cartArray[i].name + ">X</button></td>"
-      + " = " 
+      //+ " = " 
       + "<td>" + cartArray[i].total + "</td>" 
       +  "</tr>";
   }
