@@ -8,7 +8,71 @@ body {
     overflow: hidden;
 }
 
-.navbar {
+#hero{
+    width: 100%;
+    height: 50vh;
+    /* background-image: url('img/Filipino\ Cuisine2.png'); */
+    /* background-size: cover;
+    background-position: center;
+    position: relative; */
+}
+.navbar{
+    width:50%;
+    /* margin: auto; */
+    padding:15px 0;
+    display:flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    position: relative;
+    left: 5rem;
+    z-index: 10;
+}
+
+.hamburger{
+	top: 4rem;
+    background: rgba(86,86,86,0.3);
+    backdrop-filter: blur(8px);
+    z-index: 999;
+}
+
+.logo{
+    width: 100px;
+    margin:30px 0;
+    cursor: pointer;
+}
+.container ul{
+    width:88%;
+    margin: auto;
+    padding:15px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    z-index: 999;
+}
+.container ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight:400;
+}
+.container{
+    width: 50%;
+    height: 100vh;
+    background: rgba(86,86,86,0.3);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+/* .navbar {
     height: 80px;
     width: 100vw;
     display: flex;
@@ -85,7 +149,7 @@ body {
 .navbar__links:hover {
     color: #FC7300;
     transition: all 0.3 ease;
-}
+} */
 
 .flexbox-container {
     display: flex;
@@ -109,8 +173,8 @@ body {
     width: 60rem;
     height: 565px;
     position: absolute;
-    left: -18px;
-    top: -18px;
+    left: -55rem;
+    top: -3.6rem;
 }
 
 .flexbox-item-2 {
@@ -119,7 +183,7 @@ body {
     width: 100vh;
     position: absolute;
     right: -18px;
-    top: -70px;
+    top: -8rem;
     background-color: #FC7300;
 }
 
@@ -181,13 +245,49 @@ body {
 
 .body__content {
     position: absolute;
-    top: 80vh;
-    left: 10rem;
+    bottom: 8rem;
+    left: -40rem;
     width: 40rem;
     animation: transitionIn 2s;
 }
 
-.first {
+.first, .second {
+    color: #fff;
+}
+
+#ww{
+    position: absolute;
+}
+
+.drow {
+    position: absolute;
+    left: 20rem;
+    bottom: 4.5rem;
+}
+
+.lag{
+    position: absolute;
+    left: 2.3rem;
+    bottom: -3.2rem;
+    margin-left: 10px;
+}
+
+.words {
+    margin-left: 10px;
+}
+
+.word {
+    left: 20rem;
+    bottom: 1rem;
+}
+
+#checkmark {
+    position: absolute;
+    left: 18rem;
+    bottom: 1.1rem;
+}
+
+/* .first {
     color: white;
     position: absolute;
     font-size: 20px;
@@ -210,11 +310,11 @@ body {
 .second .wew {
     position: absolute;
     top: 2rem;
-}
+} */
 
-li {
+/* li {
     list-style-type: none;
     display: flex;
     align-items: center;
     gap: 10px;
-}
+} */
