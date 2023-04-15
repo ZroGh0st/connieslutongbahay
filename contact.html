@@ -15,112 +15,91 @@
     <style>
         /* Set the height of the map container */
         #map-container {
-          height: 30vh;
-          width: 30vh;
+            height: 30vh;
+            width: 30vh;
         }
-      </style>
+    </style>
 </head>
 
 <body>
-    <div class="magic">
-        <nav class="navbar">
-            <div class="navbar__container">
-                <a href="index.html" id="navbar__logo">
-                    <img src="assets/PCG ICONS.png" alt="" class="logo">
-                </a>
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="index.html" class="navbar__links"> HOME </a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="about2.html" class="navbar__links"> ABOUT </a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="pageMenu.html" class="navbar__links"> MENU </a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="catering.html" class="navbar__links"> CATERING </a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="contact.html" class="navbar__links"> CONTACT US </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <div class="navbar">
+        <img src="img/PCG ICONS.png" class="logo">
+    </div>
 
-        <!-- Content -->
-        <div class="main__container">
-            <div class="content">
-                <img src="assets/Palabok.png" alt="">
-            </div>
-            <div class="list">
-                <ul class="first">
-                    <h1>OPENING HOURS</h1>
-                    <br>
-                    <li>
-                        Mon - Fri: 7am - 10pm
-                    </li>
-                    <li>
-                        Saturday: 8am - 10pm
-                    </li>
-                    <li>
-                        Sunday: 8am - 11pm
-                    </li>
-                </ul>
-                <ul class="second">
-                    <h1>LOCATION</h1>
-                    <br>
-                    <li>
-                        ABSFI Canteen, Busco,
-                    </li>
-                    <li>
-                        Butong, Quezon, Philippines, 8710
-                        <div id="map-container" style="margin-left: 17rem; z-index: 999;"></div>
-                    </li>
-                       
-                </ul>
-                <ul class="third">
-                    <h1>FOLLOW US ON</h1>
-                    <br>
-                    <li>
-                        Facebook
-                    </li>
-                </ul>
-                
-            </div>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about2.html">ABOUT</a></li>
+            <li><a href="pageMenu.html">MENU</a></li>
+            <li><a href="catering.html">CATERING</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="main__container">
+        <div class="content">
+            <img src="assets/Palabok.png" alt="">
+        </div>
+        <div class="list">
+            <ul class="first">
+                <h1>OPENING HOURS</h1>
+                <br>
+                <li>
+                    Mon - Fri: 7am - 10pm
+                </li>
+                <li>
+                    Saturday: 8am - 10pm
+                </li>
+                <li>
+                    Sunday: 8am - 11pm
+                </li>
+            </ul>
+            <ul class="second">
+                <h1>LOCATION</h1>
+                <br>
+                <li>
+                    ABSFI Canteen, Busco,
+                </li>
+                <li>
+                    Butong, Quezon, Philippines, 8710
+                    <div id="map-container" style="margin-left: 17rem; z-index: 999;"></div>
+                </li>
+
+            </ul>
+            <ul class="third">
+                <h1>FOLLOW US ON</h1>
+                <br>
+                <li>
+                    Facebook
+                </li>
+            </ul>
+
         </div>
     </div>
-     <!-- Include the Google Maps API script -->
-     <script
-     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEg9F_jnYKlCg9ZqCQTL-5yVe99qAYZ_E&callback=initMap"
-     async
-     defer
-   ></script>
+    <!-- Include the Google Maps API script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEg9F_jnYKlCg9ZqCQTL-5yVe99qAYZ_E&callback=initMap"
+        async defer></script>
     <!-- Create a script to initialize the map -->
     <script>
         function initMap() {
-          // Set the coordinates for the center of the map
-          var myLatLng = { lat: 7.809555005775461, lng: 125.07443170942659 };
-          
-          // Create a new map object
-          var map = new google.maps.Map(document.getElementById("map-container"), {
-            center: myLatLng,
-            zoom: 18,
-          });
-  
-          // Create a marker for the center of the map
-          var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: "San Francisco, CA",
-          });
+            // Set the coordinates for the center of the map
+            var myLatLng = { lat: 7.809555005775461, lng: 125.07443170942659 };
+
+            // Create a new map object
+            var map = new google.maps.Map(document.getElementById("map-container"), {
+                center: myLatLng,
+                zoom: 18,
+            });
+
+            // Create a marker for the center of the map
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: "San Francisco, CA",
+            });
         }
-      </script>
+    </script>
     <script src="index.js"></script>
 </body>
 
