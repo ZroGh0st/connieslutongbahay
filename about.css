@@ -1,7 +1,8 @@
 *{
     margin:0;
     padding: 0;
-    font-family: sans-serif;
+    font-family:'Poppins', sans-serif;
+	box-sizing: border-box;
 }
 #hero{
     width: 100%;
@@ -30,6 +31,7 @@ ul {
     margin:30px 0;
     cursor: pointer;
 }
+
 .container ul{
     width:88%;
     margin: auto;
@@ -39,11 +41,23 @@ ul {
     justify-content: space-between;
     position: relative;
 }
+@media only screen and (max-width:768px){
+    nav{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:768px){
+.logo-wrap{
+    text-align: center;
+}
+}
 
 .container ul li{
     list-style: none;
     display: inline-block;
     margin: 0 15px;
+	cursor: pointer;
     
 }
 .container ul li a{
@@ -52,6 +66,41 @@ ul {
     font-size: 18px;
     font-weight:400;
 }
+.container ul li a:hover{
+	color: orange;
+}
+@media (max-width: 600px) {
+	.navbar {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  flex-wrap: wrap;
+	  padding: 10px;
+	}
+	
+	.logo {
+	  width: 50%;
+	  margin: auto;
+	}
+	
+	.container {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	}
+	
+	.nav-links {
+	  display: flex;
+	  flex-direction: column;
+	  text-align: center;
+	}
+	
+	.nav-links li {
+	  margin: 10px 0;
+	}
+  }
+
 .container{
     width: 50%;
     height: 100vh;
@@ -61,6 +110,7 @@ ul {
     right:0;
     top:0;
 }
+
 .info{
     width: 550px;
     color:#fff;
@@ -89,6 +139,7 @@ h1{
     line-height: 40px;
     font-weight: 500;
 }
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
 
